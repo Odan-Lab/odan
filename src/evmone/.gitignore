@@ -1,7 +1,0 @@
-/build
-/cmake-build-*
-/.idea
-lib/evmone/.dirstamp
-lib/evmone/libbitcoin_common_a-*
-lib/evmone/.deps/.dirstamp
-lib/evmone/.deps/libbitcoin_common_a-*
