@@ -430,12 +430,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">查看交易历史</translation>
     </message>
     <message>
-        <source>&amp;QRC Tokens</source>
-        <translation type="unfinished">QRCtoken</translation>
+        <source>&amp;OAS Tokens</source>
+        <translation type="unfinished">OAStoken</translation>
     </message>
     <message>
-        <source>QRC Tokens (send, receive or add Tokens in list)</source>
-        <translation type="unfinished">QRCtoken（在列表内发送、接收或添加token）</translation>
+        <source>OAS Tokens (send, receive or add Tokens in list)</source>
+        <translation type="unfinished">OAStoken（在列表内发送、接收或添加token）</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -2893,7 +2893,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
     </message>
 </context>
 <context>
-    <name>QRCToken</name>
+    <name>OASToken</name>
     <message>
         <source>Form</source>
         <translation type="unfinished">表单</translation>

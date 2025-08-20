@@ -318,7 +318,7 @@ void BitcoinGUI::createActions()
     overviewAction->setToolTip(overviewAction->statusTip());
     overviewAction->setCheckable(true);
     overviewAction->setShortcut(QKeySequence(QStringLiteral("Alt+1")));
-    tabGroup->addAction(overviewAction);
+    tabGroup->addAction(overviewAction); 
 
     sendCoinsAction = new QAction(platformStyle->MultiStatesIcon(":/icons/send_to"), tr("&Send"), this);
     sendCoinsAction->setStatusTip(tr("Send coins to a Odan address"));
@@ -361,12 +361,12 @@ void BitcoinGUI::createActions()
     delegationAction = new QAction(tr("Delegations"), this);
     superStakerAction = new QAction(tr("Super Staking"), this);
 
-    QRCTokenAction = new QAction(platformStyle->MultiStatesIcon(":/icons/qrctoken"), tr("&QRC Tokens"), this);
-    QRCTokenAction->setStatusTip(tr("QRC Tokens (send, receive or add Tokens in list)"));
-    QRCTokenAction->setToolTip(QRCTokenAction->statusTip());
-    QRCTokenAction->setCheckable(true);
-    QRCTokenAction->setShortcut(QKeySequence(QStringLiteral("Alt+5")));
-    tabGroup->addAction(QRCTokenAction);
+    OASTokenAction = new QAction(platformStyle->MultiStatesIcon(":/icons/oastoken"), tr("&OAS Tokens"), this);
+    OASTokenAction->setStatusTip(tr("OAS Tokens (send, receive or add Tokens in list)"));
+    OASTokenAction->setToolTip(OASTokenAction->statusTip());
+    OASTokenAction->setCheckable(true);
+    OASTokenAction->setShortcut(QKeySequence(QStringLiteral("Alt+5")));
+    tabGroup->addAction(OASTokenAction);
 #ifdef ENABLE_WALLET
     // These showNormalIfMinimized are needed because Send Coins and Receive Coins
     // can be triggered from the tray menu, and need to show the GUI to be useful.
@@ -384,8 +384,8 @@ void BitcoinGUI::createActions()
     connect(sendToContractAction, SIGNAL(triggered()), this, SLOT(gotoSendToContractPage()));
     connect(callContractAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(callContractAction, SIGNAL(triggered()), this, SLOT(gotoCallContractPage()));
-    connect(QRCTokenAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-    connect(QRCTokenAction, SIGNAL(triggered()), this, SLOT(gotoTokenPage()));
+    connect(OASTokenAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(OASTokenAction, SIGNAL(triggered()), this, SLOT(gotoTokenPage()));
     connect(stakeAction, &QAction::triggered, [this]{ showNormalIfMinimized(); });
     connect(stakeAction, &QAction::triggered, this, &BitcoinGUI::gotoStakePage);
     connect(delegationAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -710,7 +710,7 @@ void BitcoinGUI::createToolBars()
         walletStakeActions.append(delegationAction);
         walletStakeActions.append(superStakerAction);
         appNavigationBar->mapGroup(walletStakeAction, walletStakeActions);
-        appNavigationBar->addAction(QRCTokenAction);
+        appNavigationBar->addAction(OASTokenAction);
         appNavigationBar->buildUi();
         overviewAction->setChecked(true);
     }
@@ -970,7 +970,7 @@ void BitcoinGUI::setWalletActionsEnabled(bool enabled)
     receiveCoinsAction->setEnabled(enabled);
     historyAction->setEnabled(enabled);
     smartContractAction->setEnabled(enabled);
-    QRCTokenAction->setEnabled(enabled);
+    OASTokenAction->setEnabled(enabled);
     encryptWalletAction->setEnabled(enabled);
     backupWalletAction->setEnabled(enabled);
     restoreWalletAction->setEnabled(enabled);
@@ -1145,7 +1145,7 @@ void BitcoinGUI::gotoHistoryPage()
 
 void BitcoinGUI::gotoTokenPage()
 {
-    QRCTokenAction->setChecked(true);
+    OASTokenAction->setChecked(true);
     if (walletFrame) walletFrame->gotoTokenPage();
 }
 

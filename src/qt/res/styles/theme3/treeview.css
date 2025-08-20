@@ -3,11 +3,11 @@ Tree view CSS
 --------------------------------------------*/
 QTreeWidget {
     background-color:rgba(0,0,0,0);
-    selection-background-color: #26a1e3;
+    selection-background-color: #26e34f;
     show-decoration-selected:0;
 }
 QTreeView{
-    color: #6b80af;
+    color: #6daf6b;
     background-color: #ffffff;
     alternate-background-color: #ffffff;
     border: none;
@@ -22,11 +22,11 @@ QTreeView::item{
 }
 QTreeView::item:selected{
     qproperty-showGrid: false;
-    background: #26a1e3;
+    background: #26e32f;
     color: #ffffff;
 }
 QTreeView::disabled{
-    color: rgba(107, 128, 175, 20%);
+    color: rgba(107, 175, 110, 0.2);
 }
 /*--------------------------------------------
 Scroll bar dark CSS

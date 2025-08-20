@@ -68,7 +68,7 @@ QLabel#labelTotal,
 #labelNetwork,
 #labelBlockChain,
 #labelMempoolTitle{
-    color: #049ee8;
+    color: #04e850;
 }
 QLabel#overriddenByCommandLineLabel{
     color: #bdbdbd;

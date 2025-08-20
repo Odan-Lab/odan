@@ -9,7 +9,7 @@
 
 class QWidget;
 class QApplication;
-
+ 
 #define SetObjectStyleSheet(object, name) StyleSheet::instance().setStyleSheet(object, name)
 
 #define GetStyleValue(key, defaultValue) StyleSheet::instance().getStyleValue(key, defaultValue)

@@ -91,15 +91,15 @@ PlatformStyle::PlatformStyle(const QString &_name, bool _imagesOnButtons, bool _
 
     // Determine icon highlighting color
     if (colorizeIcons) {
-        singleColor = GetStringStyleValue("platformstyle/single-color", "#008ac8");
+        singleColor = GetStringStyleValue("platformstyle/single-color", "#00c81bff");
     }
     // Determine text color
-    textColor = GetStringStyleValue("platformstyle/text-color", "#e6f0f0");
+    textColor = GetStringStyleValue("platformstyle/text-color", "#e6f0e6ff");
     menuColor = GetColorStyleValue("platformstyle/menu-color", QColor(QApplication::palette().color(QPalette::WindowText)));
 
     // Determine table color
     tableColorNormal = GetStringStyleValue("platformstyle/table-color-normal", "#ffffff");
-    tableColorInput = GetStringStyleValue("platformstyle/table-color-input", "#2fa5df");
+    tableColorInput = GetStringStyleValue("platformstyle/table-color-input", "#2fdf38ff");
     tableColorInout = GetStringStyleValue("platformstyle/table-color-inout", "#40bb00");
     tableColorOutput = GetStringStyleValue("platformstyle/table-color-output", "#40bb00");
     tableColorError = GetStringStyleValue("platformstyle/table-color-error", "#d02e49");
@@ -107,7 +107,7 @@ PlatformStyle::PlatformStyle(const QString &_name, bool _imagesOnButtons, bool _
     // Determine multi states icon colors
     multiStatesIconColor1 = GetStringStyleValue("platformstyle/multi-states-icon-color1", "#ffffff");
     multiStatesIconColor2 = GetStringStyleValue("platformstyle/multi-states-icon-color2", "#2d2d2d");
-    multiStatesIconColor3 = GetStringStyleValue("platformstyle/multi-states-icon-color3", "#5a5a5d");
+    multiStatesIconColor3 = GetStringStyleValue("platformstyle/multi-states-icon-color3", "#5a5d5aff");
 }
 
 QColor PlatformStyle::TextColor() const

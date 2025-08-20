@@ -42,7 +42,7 @@ QT_FORMS_UI = \
   qt/forms/optionsdialog.ui \
   qt/forms/overviewpage.ui \
   qt/forms/psbtoperationsdialog.ui \
-  qt/forms/qrctoken.ui \
+  qt/forms/oastoken.ui \
   qt/forms/receivecoinsdialog.ui \
   qt/forms/receiverequestdialog.ui \
   qt/forms/receivetokenpage.ui \
@@ -123,7 +123,7 @@ QT_MOC_CPP = \
   qt/moc_paymentserver.cpp \
   qt/moc_psbtoperationsdialog.cpp \
   qt/moc_qrimagewidget.cpp \
-  qt/moc_qrctoken.cpp \
+  qt/moc_oastoken.cpp \
   qt/moc_qswitchcontrol.cpp \
   qt/moc_qvalidatedlineedit.cpp \
   qt/moc_qvalidatedtextedit.cpp \
@@ -264,7 +264,7 @@ BITCOIN_QT_H = \
   qt/platformstyle.h \
   qt/psbtoperationsdialog.h \
   qt/qrimagewidget.h \
-  qt/qrctoken.h \
+  qt/oastoken.h \
   qt/qswitchcontrol.h \
   qt/qvalidatedlineedit.h \
   qt/qvalidatedtextedit.h \
@@ -388,7 +388,7 @@ QT_RES_ICONS = \
   qt/res/icons/contract_output.png \
   qt/res/icons/smart_contract.png \
   qt/res/icons/lock_staking.png \
-  qt/res/icons/qrctoken.png \
+  qt/res/icons/oastoken.png \
   qt/res/icons/add_recipient.png \
   qt/res/icons/encrypt.png \
   qt/res/icons/receive_from.png \
@@ -492,7 +492,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/overviewpage.cpp \
   qt/paymentserver.cpp \
   qt/psbtoperationsdialog.cpp \
-  qt/qrctoken.cpp \
+  qt/oastoken.cpp \
   qt/qrimagewidget.cpp \
   qt/receivecoinsdialog.cpp \
   qt/receiverequestdialog.cpp \
