@@ -11,6 +11,7 @@
 
 #include <assert.h>
 
+
 void SetupChainParamsBaseOptions(ArgsManager& argsman)
 {
     argsman.AddArg("-chain=<chain>", "Use the chain <chain> (default: main). Allowed values: main, test, signet, regtest", ArgsManager::ALLOW_ANY, OptionsCategory::CHAINPARAMS);
@@ -40,15 +41,15 @@ std::unique_ptr<CBaseChainParams> CreateBaseChainParams(const ChainType chain)
 {
     switch (chain) {
     case ChainType::MAIN:
-        return std::make_unique<CBaseChainParams>("", 3889, 3891);
+        return std::make_unique<CBaseChainParams>("", 3692, 3681);
     case ChainType::TESTNET:
-        return std::make_unique<CBaseChainParams>("testnet3", 13889, 13891);
+        return std::make_unique<CBaseChainParams>("testnet3", 13692, 13681);
     case ChainType::SIGNET:
-        return std::make_unique<CBaseChainParams>("signet", 33889, 33891);
+        return std::make_unique<CBaseChainParams>("signet", 33692, 33681);
     case ChainType::REGTEST:
-        return std::make_unique<CBaseChainParams>("regtest", 13889, 13891);
+        return std::make_unique<CBaseChainParams>("regtest", 13692, 13681);
     case ChainType::UNITTEST:
-        return std::make_unique<CBaseChainParams>("regtest", 13889, 13891);
+        return std::make_unique<CBaseChainParams>("regtest", 13692, 13681);
     }
     assert(false);
 }
