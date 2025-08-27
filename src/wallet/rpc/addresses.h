@@ -1,0 +1,13 @@
+#ifndef ODAN_WALLET_RPC_ADDRESSES_H
+#define ODAN_WALLET_RPC_ADDRESSES_H
+
+#include <addresstype.h>
+#include <univalue.h>
+
+namespace wallet {
+class CWallet;
+
+UniValue DescribeWalletAddress(const CWallet& wallet, const CTxDestination& dest);
+} //  namespace wallet
+
+#endif // ODAN_WALLET_RPC_ADDRESSES_H
