@@ -1,26 +1,28 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        //jcenter()
+        mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath 'com.android.tools.build:gradle:7.3.1'
     }
 }
 
 repositories {
     google()
-    jcenter()
+    //jcenter()
+    mavenCentral()
 }
 
-apply plugin: 'com.android.application'
+//apply plugin: 'com.android.application'
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-}
+//dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//}
 
-android {
+/*android {
     compileSdkVersion androidCompileSdkVersion.toInteger()
 
     buildToolsVersion androidBuildToolsVersion
@@ -50,3 +52,4 @@ android {
         minSdkVersion 24
     }
 }
+*/
