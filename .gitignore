@@ -11,9 +11,10 @@ src/odan-util
 src/odan-chainstate
 src/odan-wallet
 src/test/fuzz/fuzz
-src/test/test_odan
-src/qt/test/test_odan-qt
 src/bench/bench_odan
+src/test/test_odan*
+src/qt/test/test_odan-qt*
+src/qt/odan-qt
 
 # autoreconf
 Makefile.in
